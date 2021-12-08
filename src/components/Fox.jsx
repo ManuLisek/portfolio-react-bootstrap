@@ -1,6 +1,5 @@
 import React from 'react';
 import fox from '../images/fox.webp';
-import '../components/Fox';
 
 function Fox() {
 
