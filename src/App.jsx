@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './sections/Header';
 import About from './sections/About';
+import Technologies from './sections/Technologies';
 import './styles/custom.scss';
 
 function App() {
@@ -8,7 +9,10 @@ function App() {
   return (
     <>
       <Header />
-      <About />
+      <main>
+        <About />
+        <Technologies />
+      </main>
     </>
   );
 }
