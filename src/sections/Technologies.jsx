@@ -21,7 +21,7 @@ function Technologies() {
   return (        
     <section id="technologies" className="py-4 bg-secondary text-center">
       <div className="container px-4">
-        <h3 className="text-primary mb-4">Technologies</h3>
+        <h3 className="text-primary mb-4">Technologie</h3>
         <div className="row gx-lg-5 justify-content-center">
           {skills}
         </div>
