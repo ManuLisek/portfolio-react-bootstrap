@@ -5,6 +5,7 @@ import Technologies from './sections/Technologies';
 import Projects from './sections/Projects';
 import Contact from './sections/Contact';
 import Wave from './components/Wave';
+import Shape from './components/Shape';
 import './styles/custom.scss';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Wave bg="bg-dark" fill="#473520" />
         <Contact />
       </main>
+      <Shape />
     </>
   );
 }

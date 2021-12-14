@@ -1,6 +1,12 @@
 @import "./colors.scss";
+@import "./scrollbar.scss";
 @import "~bootstrap/scss/bootstrap.scss";
 
 * {
 	scroll-behavior: smooth;
+	z-index: 1;
+}
+
+.shape {
+	z-index: 0;
 }
