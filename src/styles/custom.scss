@@ -1,3 +1,4 @@
+@import "./animations.scss";
 @import "./colors.scss";
 @import "./scrollbar.scss";
 @import "~bootstrap/scss/bootstrap.scss";
@@ -13,6 +14,10 @@
 	z-index: 0;
 }
 
+//// Section Header
+header {
+	min-height: 500px;
+}
 // Fox eyes sizes
 .eyes {
 	left: 5px;
@@ -30,4 +35,36 @@
 .ball {
 	width: 5px;
 	height: 7px;
+}
+
+// Media queries for fox
+@media (max-width: 575px) {
+	.fox {
+		margin-top: 80px;
+	}
+}
+
+@media (max-width: 360px) {
+	.fox-container {
+		max-width: 250px;
+	}
+	.eyes {
+		left: 3px;
+		bottom: 122px;
+		text-align: center;
+	}
+	.eye {
+		width: 15px;
+		height: 10px;
+		margin: 26px;
+	}
+	.ball {
+		width: 4px;
+		height: 6px;
+	}
+}
+
+// arrow animation
+.arrow {
+	animation: updown 2s infinite;
 }
