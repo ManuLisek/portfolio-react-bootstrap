@@ -75,3 +75,9 @@ header {
 .arrow {
 	animation: updown 2s infinite;
 }
+
+//// Section About
+.swinging {
+	transform-origin: 52% 2%;
+	animation: swing 5s ease-in-out;
+}
