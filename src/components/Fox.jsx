@@ -30,10 +30,12 @@ function Fox() {
         <div className="container">
           <div className="eyes position-relative">
             <div className="eye position-relative d-inline-block overflow-hidden rounded-circle">
+              <div className="eyelid position-absolute bg-eyelid"></div>
               <div className="ball position-absolute bg-secondary rounded-circle" 
                 style={ballPosition}></div>
             </div>
             <div className="eye position-relative d-inline-block overflow-hidden rounded-circle">
+              <div className="eyelid position-absolute bg-eyelid"></div>
               <div className="ball position-absolute bg-secondary rounded-circle" 
                 style={ballPosition}></div>
             </div>

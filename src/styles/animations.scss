@@ -1,3 +1,18 @@
+@keyframes blink {
+	0% {
+		transform: translate(-50%, -110%);
+	}
+	98% {
+		transform: translate(-50%, -110%);
+	}
+	99% {
+		transform: translate(-50%, -10%);
+	}
+	100% {
+		transform: translate(-50%, -110%);
+	}
+}
+
 @keyframes updown {
 	0% {
 		transform: translateY(30%);

@@ -6,8 +6,6 @@ import Projects from './sections/Projects';
 import Contact from './sections/Contact';
 import Wave from './components/Wave';
 import Shape from './components/Shape';
-import 'mdbreact/dist/css/mdb.css';
-import 'animate.css';
 import './styles/custom.scss';
 
 function App() {
