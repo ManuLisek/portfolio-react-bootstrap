@@ -1,5 +1,6 @@
 import React from 'react';
 import { technologies } from '../data/technologies';
+import ScrollAnimation from 'react-animate-on-scroll';
 import uuid from 'react-uuid';
 
 function Technologies() {
@@ -11,7 +12,9 @@ function Technologies() {
           <div className="card-body p-4 p-lg-5 pt-0 pt-lg-0">
             <div className="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i className="bi bi-bootstrap"></i></div>
             <h4 className="fs-6 text fw-bold">{skill.technology}</h4>
-            <skill.image color={skill.color}/>
+            <ScrollAnimation animateIn='flipInY' animateOnce={true}>
+              <skill.image className={skill.color}/>
+            </ScrollAnimation>
           </div>
         </div>
       </div>

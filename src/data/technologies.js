@@ -17,61 +17,61 @@ export const technologies = [
   {
     technology: 'HTML5',
     image: Html5,
-    color: '#e34c26',
+    color: 'text-html',
   },
   {
     technology: 'CSS3',
     image: Css3,
-    color: '#2965f1',
+    color: 'text-css',
   },
   {
     technology: 'JavaScript',
     image: Javascript,
-    color: '#f0db4f',
+    color: 'text-js',
   },
   {
     technology: 'Sass',
     image: Sass,
-    color: '#c69',
+    color: 'text-sass',
   },
   {
     technology: 'Bootstrap',
     image: Bootstrap,
-    color: '#563d7c',
+    color: 'text-bs',
   },
   {
     technology: 'React',
     image: ReactLogo,
-    color: '#61dbfb',
+    color: 'text-react',
   },
   {
     technology: 'Redux',
     image: Redux,
-    color: '#764abc',
+    color: 'text-redux',
   },
   {
     technology: 'React Router',
     image: Reactrouter,
-    color: 'inherit',
+    color: 'text-reset',
   },
   {
     technology: 'Styled Components',
     image: Styledcomponents,
-    color: '#c69',
+    color: 'text-sc',
   },
   {
     technology: 'RWD',
     image: PhoneDesktop,
-    color: 'inherit',
+    color: 'text-reset',
   },
   {
     technology: 'GIT',
     image: Git,
-    color: '#f34f29',
+    color: 'text-git',
   },
   {
     technology: 'Github',
     image: Github,
-    color: '#4078c0',
+    color: 'text-github',
   },
 ];
