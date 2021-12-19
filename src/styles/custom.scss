@@ -81,3 +81,41 @@ header {
 	transform-origin: 52% 2%;
 	animation: swing 5s ease-in-out;
 }
+
+//// Section Projects
+.hover-img:before,
+.hover-img:after {
+	background-color: rgba($dark, 0.3);
+	border-top: 32px solid rgba($black, 1);
+	border-bottom: 32px solid rgba($black, 1);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	content: "";
+	transition: all 0.5s ease;
+	z-index: 1;
+	opacity: 0;
+	transform: scaleY(2);
+}
+
+.hover-img figcaption {
+	opacity: 0;
+	z-index: 2;
+	transition-delay: 0.1s;
+}
+
+.hover-img:hover:before,
+.hover-img:hover:after {
+	transform: scale(1);
+	opacity: 1;
+}
+
+.hover-img:hover > img {
+	opacity: 0.7;
+}
+
+.hover-img:hover figcaption {
+	opacity: 1;
+}
