@@ -19,7 +19,7 @@ function Fox() {
     if(x > 0){
       setIsMouseMoved(true);
     }
-    setX(mousePosition.x * 70 / window.innerWidth);
+    setX(mousePosition.x * 60 / window.innerWidth);
     setY((mousePosition.y * 40 / window.innerHeight) + scrollPosition/18);
   });
 
