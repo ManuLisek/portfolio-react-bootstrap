@@ -1,11 +1,13 @@
-import React, { useState, useLayoutEffect } from 'react';
+import React, { useState, useLayoutEffect, useContext } from 'react';
+import { LangContext } from '../Context/LangContext';
 import { useMousePosition } from '../hooks/useMousePosition';
 import { useWindowScrollPosition } from '../hooks/useWindowScrollPosition';
-import Arrow from '../components/Arrow';
+import Arrow from './Arrow';
 import fox from '../images/fox.webp';
 
 function Fox() {
 
+  const [lang] = useContext(LangContext);
   const scrollPosition = useWindowScrollPosition();
   const mousePosition = useMousePosition();
   const [x, setX] = useState();
@@ -13,7 +15,7 @@ function Fox() {
   const [isMouseMoved, setIsMouseMoved] = useState(false);
   const ballPosition = isMouseMoved 
     ? {left: `${x}%`, top: `${y}%`, transform: `translate(${x}%, ${y}%)`} 
-    : {left: `${34}%`, top: `${22}%`, transform: `translate(${34}%, ${22}%)`};
+    : {left: `${31}%`, top: `${22}%`, transform: `translate(${31}%, ${22}%)`};
 
   useLayoutEffect(() => {
     if(x > 0){
@@ -26,7 +28,7 @@ function Fox() {
   return (        
     <div className="fox-container container d-flex align-items-center flex-column justify-content-center min-vh-100 pb-4">
       <div className="fox container-fluid">
-        <img className="img-fluid" src={fox} alt="fox"/>
+        <img className="img-fluid" src={fox} alt={lang.fox.alt}/>
         <div className="container">
           <div className="eyes position-relative">
             <div className="eye position-relative d-inline-block overflow-hidden rounded-circle">
@@ -42,8 +44,8 @@ function Fox() {
           </div>
         </div>
       </div>
-      <h1 className="masthead-heading">Michał Lisowiec</h1>
-      <h2 className="masthead-subheading">Junior Front-end Developer</h2>
+      <h1 className="masthead-heading">{lang.fox.header}</h1>
+      <h2 className="masthead-subheading">{lang.fox.subheader}</h2>
       <Arrow />
     </div>
   );

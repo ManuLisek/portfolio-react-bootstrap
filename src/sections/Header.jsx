@@ -1,6 +1,6 @@
 import React from 'react';
-import Navigation from '../components/Navigation';
-import Fox from '../components/Fox';
+import Navigation from '../Components/Navigation';
+import Fox from '../Components/Fox';
 
 function Header() {
 

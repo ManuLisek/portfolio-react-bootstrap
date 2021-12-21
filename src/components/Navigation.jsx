@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import poland from '../images/poland.webp';
 import unitedKingdom from '../images/united-kingdom.webp';
+import { LangContext } from '../Context/LangContext';
+import en from '../data/lang/en.json';
+import pl from '../data/lang/pl.json';
 
 function Navigation() {
 
+  const [lang, selectEn, selectPl] = useContext(LangContext);
   const [showNav, setToggleNav] = useState(false);
   const handleToggleNav = () => {
     setToggleNav(!showNav);
@@ -19,29 +23,29 @@ function Navigation() {
           <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
             <li className="nav-item">
               <a href="#about" className="nav-link">
-                O mnie
+                {lang.navigation.about}
               </a>
             </li>
             <li className="nav-item">
               <a href="#technologies" className="nav-link">
-                Technologie
+                {lang.navigation.technologies}
               </a>
             </li>
             <li className="nav-item">
               <a href="#projects" className="nav-link">
-                Projekty
+                {lang.navigation.projects}
               </a>
             </li>
             <li className="nav-item">
               <a href="#contact" className="nav-link">
-                Kontakt
+                {lang.navigation.contact}
               </a>
             </li>
           </ul>
         </div>
         <div className="pt-3 pt-lg-1 position-absolute top-0 end-0">
-          <img src={poland} className='mx-3 rounded-circle w-25' alt="polish flag"/>
-          <img src={unitedKingdom} className='mx-3 rounded-circle w-25' alt="british flag"/>
+          <img src={poland} className={`mx-3 rounded-circle cursor-pointer w-25 ${lang === pl ? 'border' : 'opacity-75'}`} onClick={() => selectPl()} alt="polish flag"/>
+          <img src={unitedKingdom} className={`mx-3 rounded-circle cursor-pointer w-25 ${lang === en ? 'border' : 'opacity-75'}`} onClick={() => selectEn()} alt="british flag"/>
         </div>
       </div>
     </nav>

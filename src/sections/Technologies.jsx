@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { LangContext } from '../Context/LangContext';
 import { technologies } from '../data/technologies';
 import ScrollAnimation from 'react-animate-on-scroll';
 import uuid from 'react-uuid';
 
 function Technologies() {
 
+  const [lang] = useContext(LangContext);
   const skills = technologies.map(skill => {
     return(
       <div key={uuid()} className="col-lg-3 col-md-4 col-sm-6 mb-5">
@@ -24,7 +26,7 @@ function Technologies() {
   return (        
     <section id="technologies" className="py-4 bg-secondary text-center">
       <div className="container px-4">
-        <h3 className="text-primary mb-4">Technologie</h3>
+        <h3 className="text-primary mb-4">{lang.technologies.title}</h3>
         <div className="row gx-lg-5 justify-content-center">
           {skills}
         </div>
