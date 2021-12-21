@@ -1,0 +1,71 @@
+{
+    "navigation": {
+        "about": "O mnie",
+        "technologies": "Technologie",
+        "projects": "Projekty",
+        "contact": "Kontakt"
+    },
+    "fox": {
+        "header": "Michał Lisowiec",
+        "subheader": "Junior Front-end Developer"
+    },
+    "about": {
+        "title": "O mnie",
+        "description": "Cześć, jestem Michał i mieszkam w Bydgoszczy. Programowaniem zainteresowałem się w 2019 roku i rozwijam tę pasję do dzisiaj. Poświęcam na naukę każdą wolną chwilę, a ponieważ sprawia mi to przyjemność, to chciałbym żeby stało się to również moją pracą. Zdecydowałem się na naukę Front-endu, ponieważ zwracam dużą uwagę na wygląd stron internetowych i lubię widzieć efekty swoich działań. Do tworzenia projektów najczęściej używam React, ale za każdym razem staram się wykorzystać coś nowego, żeby jak najwięcej się nauczyć. Chciałbym podjąć pracę jako Junior Front-end/React Developer."
+    },
+    "technologies": {
+        "title": "Technologie z których korzystam"
+    },
+    "projects": {
+        "title": "Moje projekty",
+        "buttonCode": "Github",
+        "buttonLive": "Strona",
+        "saper": {
+            "title": "Saper",
+            "descriptionAbout": "Moja wersja popularnej gry z początku lat 80, którą zna chyba każdy. Do wyboru są 2 poziomy trudności, które różnią się wielkością planszy i ilością bomb. Dodatkowym czynnikiem jest upływający czas.",
+            "descriptionTechnologies": "JavaScript ES6, CSS"
+        },
+        "quiz": {
+            "title": "Quiz",
+            "descriptionAbout": "Szybka zabawa na temat znajomości historii. W tym quizie chodzi o to, by odgadnąć wszystkich polskich prezydentów. Jedyną podpowiedzą są lata w których dany prezydent urzędował. Jest to pierwszy projekt napisany prze ze mnie w React.",
+            "descriptionTechnologies": "React, SCSS"
+        },
+        "top5": {
+            "title": "Top 5 leagues",
+            "descriptionAbout": "Jako że lubię sport, w moim portfolio nie mogło zabraknąć piłkarskiej aplikacji. Na tej stronie znajdziesz aktualne tabele ligowe, najlepszych strzelców oraz skróty ostatnich meczów z 5 najlepszych lig europejskich. Dane pobrałem z 2 niezależnych API.",
+            "descriptionTechnologies": "React, React Router, REST API, SCSS"
+        },
+        "wtyker": {
+            "title": "Wtyker",
+            "descriptionAbout": "Projekt nieistniejącego sklepu internetowego z elektroniką. Posiada możliwość filtrowania oraz sortowania produktów, a także dodawania ich do koszyka.",
+            "descriptionTechnologies": "React, React Router, Redux, Styled Components"
+        },
+        "portfolio": {
+            "title": "To portolio",
+            "descriptionAbout": "Strona na której właśnie się znajdujesz. Prezentuję na niej swoje umiejętności oraz ukończone projekty.",
+            "descriptionTechnologies": "React, Context API, Bootstrap, EmailJS, Formik, Yup, SCSS"
+        }
+    },
+    "contact": {
+        "writeMe": {
+            "title": "Napisz do mnie",
+            "subtitle": "Wypełnij formularz żeby się ze mną skontaktować.",
+            "subtitleSending": "Wysyłanie...",
+            "subtitleSuccess": "Twoja wiadomość została wysłana. Dziękuję!",
+            "subtitleError": "Uuups! Coś poszło nie tak...",
+            "emailInput": "Email",
+            "nameInput": "Imię",
+            "messageInput": "Wiadomość",
+            "emailError": "Wpisz swój adres email",
+            "emailIncorrect": "Podany email jest nieprawidłowy",
+            "nameError": "Wpisz swoje imię",
+            "messageError": "Nie wstydź się, przynajmniej się przywitaj :)",
+            "buttonMessage": "Wyślij wiadomość"
+        },
+        "contactInformations": {
+            "title": "Informacje kontaktowe",
+            "subtitle": "Dowiedz się o mnie więcej lub skontaktuj się w inny sposób."
+        }
+    }
+    
+}

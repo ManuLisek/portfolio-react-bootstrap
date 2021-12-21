@@ -1,0 +1,71 @@
+{
+    "navigation": {
+        "about": "About",
+        "technologies": "Technologies",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "fox": {
+        "header": "Michał Lisowiec",
+        "subheader": "Junior Front-end Developer"
+    },
+    "about": {
+        "title": "About me",
+        "description": "Hello, I am Michał and I live in Bydgoszcz. In 2019 year I got interested in programming and I develop this passion to this day. I devote for learning every free moment, and because it gives me pleasure, I'd like it to become my job as well. I decided on a Front-end, because I pay attention on appearance of websites and I like to see effects of my actions. For creating projects I use mostly React, but every time I try to use something new, to learn as much as possible. I would like to work as Junior Front-end/React Developer"
+    },
+    "technologies": {
+        "title": "Technologies that I use"
+    },
+    "projects": {
+        "title": "My projects",
+        "buttonCode": "Github",
+        "buttonLive": "Live",
+        "saper": {
+            "title": "Saper",
+            "descriptionAbout": "My version of a popular game from the early 1980s that probably everyone knows. There are 2 difficulty levels to choose, which differ in the size of the board and the number of bombs. Passing time is an additional factor.",
+            "descriptionTechnologies": "JavaScript ES6, CSS"
+        },
+        "quiz": {
+            "title": "Quiz",
+            "descriptionAbout": "Quick game about history knowledge. This quiz is about guessing all Polish presidents. The only hints are the years in which the president was in office. This is the first project I created in React.",
+            "descriptionTechnologies": "React, SCSS"
+        },
+        "top5": {
+            "title": "Top 5 leagues",
+            "descriptionAbout": "Because I like sports, a football application could not be missing in my portfolio. On this page you will find the current league tables, top scorers and highlights of the latest matches in the top 5 European leagues. I downloaded the data from 2 independent APIs",
+            "descriptionTechnologies": "React, React Router, REST API, SCSS"
+        },
+        "wtyker": {
+            "title": "Wtyker",
+            "descriptionAbout": "Project about fake online shop with electronics. You can filter and sort products in it and add them to the cart",
+            "descriptionTechnologies": "React, React Router, Redux, Styled Components"
+        },
+        "portfolio": {
+            "title": "This portfolio site",
+            "descriptionAbout": "The website you are currently on. I present there my skills and finished projects.",
+            "descriptionTechnologies": "React, Context API, Bootstrap, EmailJS, Formik, Yup, SCSS"
+        }
+    },
+    "contact": {
+        "writeMe": {
+            "title": "Write me",
+            "subtitle": "Fill the form to contact with me.",
+            "subtitleSending": "Sending...",
+            "subtitleSuccess": "Your message was sent. Thanks!",
+            "subtitleError": "Wooops! Something went wrong...",
+            "emailInput": "Email",
+            "nameInput": "Name",
+            "messageInput": "Message",
+            "emailError": "Please enter your email",
+            "emailIncorrect": "The email is incorrect",
+            "nameError": "Please enter your name",
+            "messageError": "Don't be shy, at least say hi :)",
+            "buttonMessage": "Send message"
+        },
+        "contactInformations": {
+            "title": "Contact information",
+            "subtitle": "Find out more about me or contact me in another way."
+        }
+    }
+    
+}
