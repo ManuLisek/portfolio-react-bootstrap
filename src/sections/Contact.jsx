@@ -3,6 +3,9 @@ import { LangContext } from '../Context/LangContext';
 import emailjs from 'emailjs-com';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
+import { useTranslation } from 'react-i18next';
+import WithTranslateFormErrors from '../Components/WithTranslateFormErrors';
+import '../utilities/i18next';
 import {
   Github,
   Linkedin,
@@ -10,18 +13,19 @@ import {
 
 function Contact() {
 
+  const { t } = useTranslation();
   const [lang] = useContext(LangContext);
   const [isFormSended, setIsFormSended] = useState(false);
   const [isError, setIsError] = useState(false);
   const initialValues = { email: '', name: '', message: '' };
   const contactSchema = Yup.object().shape({
     email: Yup.string()
-      .email('Podany email jest nieprawidłowy')
-      .required('Wpisz swój adres email'),
+      .email('emailIncorrect')
+      .required('emailError'),
     name: Yup.string()
-      .required('Wpisz swoje imię'),
+      .required('nameError'),
     message: Yup.string()
-      .required('Nie wstydź się, przynajmniej się przywitaj :)'),
+      .required('messageError'),
   });
 
   const sendEmail = (values, resetForm) => {
@@ -62,74 +66,77 @@ function Contact() {
                     handleBlur,
                     handleSubmit,
                     isSubmitting,
+                    setFieldTouched,
                   }) => {
                     return (
-                      <form method="POST" id="contactForm" name="contactForm" className="contactForm" noValidate="novalidate" onSubmit={handleSubmit} >
-                        <h3 className="mb-4">{lang.contact.writeMe.title}</h3>
-                        {isFormSended
-                          ? (isSubmitting
-                            ? <div className="mb-4">{lang.contact.writeMe.subtitleSending}</div>
-                            : (isError
-                              ? <div className="mb-4 text-danger">{lang.contact.writeMe.subtitleError}</div>
-                              : <div className="mb-4">{lang.contact.writeMe.subtitleSuccess}</div>))
-                          : <div className="mb-4">{lang.contact.writeMe.subtitle}</div>}
-                        <div className="row">
-                          <div className="col-md-12 mb-1">
-                            <div className="form-group">
-                              <input
-                                type="email"
-                                autoComplete="new-password"
-                                className={`form-control border-2 ${touched.email ? (errors.email ? 'border-danger' : 'border-success') : ''}`}
-                                name="email"
-                                id="email"
-                                placeholder="Email"
-                                onChange={handleChange}
-                                onBlur={handleBlur}
-                                value={values.email}
-                              />
-                              <p className="text-danger">{errors.email && touched.email && errors.email}</p>
+                      <WithTranslateFormErrors errors={errors} touched={touched} setFieldTouched={setFieldTouched}>
+                        <form method="POST" id="contactForm" name="contactForm" className="contactForm" noValidate="novalidate" onSubmit={handleSubmit} >
+                          <h3 className="mb-4">{lang.contact.writeMe.title}</h3>
+                          {isFormSended
+                            ? (isSubmitting
+                              ? <div className="mb-4">{lang.contact.writeMe.subtitleSending}</div>
+                              : (isError
+                                ? <div className="mb-4 text-danger">{lang.contact.writeMe.subtitleError}</div>
+                                : <div className="mb-4">{lang.contact.writeMe.subtitleSuccess}</div>))
+                            : <div className="mb-4">{lang.contact.writeMe.subtitle}</div>}
+                          <div className="row">
+                            <div className="col-md-12 mb-1">
+                              <div className="form-group">
+                                <input
+                                  type="email"
+                                  autoComplete="new-password"
+                                  className={`form-control border-2 ${touched.email ? (errors.email ? 'border-danger' : 'border-success') : ''}`}
+                                  name="email"
+                                  id="email"
+                                  placeholder={lang.contact.writeMe.emailInput}
+                                  onChange={handleChange}
+                                  onBlur={handleBlur}
+                                  value={values.email}
+                                />
+                                <p className="text-danger">{errors.email && touched.email && t(errors.email)}</p>
+                              </div>
+                            </div>
+                            <div className="col-md-12 mb-1">
+                              <div className="form-group">
+                                <input
+                                  type="text"
+                                  autoComplete="new-password"
+                                  className={`form-control border-2 ${touched.name ? (errors.name ? 'border-danger' : 'border-success') : ''}`}
+                                  name="name"
+                                  id="name"
+                                  placeholder={lang.contact.writeMe.nameInput}
+                                  onChange={handleChange}
+                                  onBlur={handleBlur}
+                                  value={values.name}
+                                />
+                                <p className="text-danger">{errors.name && touched.name && t(errors.name)}</p>
+                              </div>
+                            </div>
+                            <div className="col-md-12 mb-1">
+                              <div className="form-group">
+                                <textarea
+                                  name="message"
+                                  className={`form-control border-2 ${touched.message ? (errors.message ? 'border-danger' : 'border-success') : ''}`}
+                                  id="message"
+                                  cols="30"
+                                  rows="6"
+                                  placeholder={lang.contact.writeMe.messageInput}
+                                  onChange={handleChange}
+                                  onBlur={handleBlur}
+                                  value={values.message}
+                                ></textarea>
+                                <p className="text-danger">{errors.message && touched.message && t(errors.message)}</p>
+                              </div>
+                            </div>
+                            <div className="col-md-12">
+                              <div className="form-group">
+                                <button type="submit" className="btn btn-primary" disabled={isSubmitting}>{lang.contact.writeMe.buttonMessage}</button>
+                                <div className="submitting"></div>
+                              </div>
                             </div>
                           </div>
-                          <div className="col-md-12 mb-1">
-                            <div className="form-group">
-                              <input
-                                type="text"
-                                autoComplete="new-password"
-                                className={`form-control border-2 ${touched.name ? (errors.name ? 'border-danger' : 'border-success') : ''}`}
-                                name="name"
-                                id="name"
-                                placeholder="Imię"
-                                onChange={handleChange}
-                                onBlur={handleBlur}
-                                value={values.name}
-                              />
-                              <p className="text-danger">{errors.name && touched.name && errors.name}</p>
-                            </div>
-                          </div>
-                          <div className="col-md-12 mb-1">
-                            <div className="form-group">
-                              <textarea
-                                name="message"
-                                className={`form-control border-2 ${touched.message ? (errors.message ? 'border-danger' : 'border-success') : ''}`}
-                                id="message"
-                                cols="30"
-                                rows="6"
-                                placeholder="Wiadomość"
-                                onChange={handleChange}
-                                onBlur={handleBlur}
-                                value={values.message}
-                              ></textarea>
-                              <p className="text-danger">{errors.message && touched.message && errors.message}</p>
-                            </div>
-                          </div>
-                          <div className="col-md-12">
-                            <div className="form-group">
-                              <button type="submit" className="btn btn-primary" disabled={isSubmitting}>{lang.contact.writeMe.buttonMessage}</button>
-                              <div className="submitting"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </form>
+                        </form>
+                      </WithTranslateFormErrors>
                     );
                   }}
                 </Formik>
