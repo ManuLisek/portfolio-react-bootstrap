@@ -8,7 +8,6 @@ function WithTranslateFormErrors ({ errors, touched, setFieldTouched, children }
 }
   
 WithTranslateFormErrors.propTypes = {
-  form: PropTypes.object,
   touched: PropTypes.object,
   errors: PropTypes.object,
   setFieldTouched: PropTypes.func,

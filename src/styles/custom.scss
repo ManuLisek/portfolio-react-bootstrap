@@ -13,14 +13,35 @@
 	cursor: pointer;
 }
 
-// Shape styles
 .shape {
 	z-index: 0;
 }
 
+.h4 {
+	font-size: 1rem;
+}
+
+@media (max-width: 360px) {
+	.h4 {
+		font-size: 0.8rem;
+	}
+}
+
+@media (max-width: 320px) {
+	.h4 {
+		font-size: 0.6rem;
+	}
+}
+
+@media (max-width: 575px) {
+	h3 {
+		padding-top: 80px;
+	}
+}
+
 //// Section Header
 header {
-	min-height: 500px;
+	min-height: 550px;
 }
 
 .navbar,
@@ -97,6 +118,13 @@ header {
 	animation: swing 5s ease-in-out;
 }
 
+//// Section Technologies
+@media (max-width: 575px) {
+	.w-sm-50 {
+		width: 50% !important;
+	}
+}
+
 //// Section Projects
 .hover-img:before,
 .hover-img:after {
@@ -133,4 +161,11 @@ header {
 
 .hover-img:hover figcaption {
 	opacity: 1;
+}
+
+////Section Contact
+@media (max-width: 320px) {
+	.w-xs-50 {
+		width: 50% !important;
+	}
 }
