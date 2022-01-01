@@ -148,10 +148,14 @@ function Contact() {
                 <p className="mb-4">{lang.contact.contactInformations.subtitle}</p>
                 <div className="w-50">
                   <div className="w-25 w-xs-50 mb-5">
-                    <Github color={'#ba8f59'} />
+                    <a href="https://github.com/ManuLisek" target="blank">
+                      <Github color={'text-primary'} />
+                    </a>
                   </div>
                   <div className="w-25 w-xs-50 mb-5">
-                    <Linkedin color={'#ba8f59'} />
+                    <a href="https://www.linkedin.com/in/mlisowiec/" target="blank">
+                      <Linkedin color={'text-primary'} />
+                    </a>
                   </div>
                 </div>
               </div>

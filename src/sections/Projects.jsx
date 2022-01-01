@@ -16,30 +16,39 @@ function Projects() {
       image: saper,
       description: lang.projects.saper.description,
       stack: lang.projects.saper.stack,
+      live: 'https://manulisek.github.io/saper-javascript/',
+      github: 'https://github.com/ManuLisek/saper-javascript',
     },
     {
       title: lang.projects.quiz.title,
       image: quiz,
       description: lang.projects.quiz.description,
       stack: lang.projects.quiz.stack,
+      live: 'https://manulisek.github.io/quiz-react/',
+      github: 'https://github.com/ManuLisek/quiz-react',
     },
     {
       title: lang.projects.top5.title,
       image: top5,
       description: lang.projects.top5.description,
       stack: lang.projects.top5.stack,
+      live: 'https://manulisek.github.io/top-5-leagues-react/',
+      github: 'https://github.com/ManuLisek/top-5-leagues-react',
     },
     {
       title: lang.projects.wtyker.title,
       image: wtyker,
       description: lang.projects.wtyker.description,
       stack: lang.projects.wtyker.stack,
+      live: 'https://manulisek.github.io/wtyker-react-redux/',
+      github: 'https://github.com/ManuLisek/wtyker-react-redux',
     },
     {
       title: lang.projects.portfolio.title,
       image: portfolio,
       description: lang.projects.portfolio.description,
       stack: lang.projects.portfolio.stack,
+      github: 'https://github.com/ManuLisek/portfolio-react-bootstrap',
     },
   ];
   const projectsList = projects.map((project, i) => {
@@ -49,10 +58,14 @@ function Projects() {
           <figure className={`figure col-lg-6 hover-img bg-black overflow-hidden position-relative rounded-3 ${i % 2 !== 0 ? 'order-lg-2' : ''}`}>
             <img className="img-fluid" src={project.image} alt={`project ${lang.projects.portfolio.title}`} />
             <figcaption className="d-flex  justify-content-center align-items-center position-absolute top-0 bottom-0 start-0 end-0">
-              {project.title === 'Portfolio'
+              {project.title === lang.projects.portfolio.title
                 ? ''
-                : <button type="button" className="btn btn-primary px-3 px-sm-5 m-2">{lang.projects.buttonLive}</button>}
-              <button type="button" className="btn btn-primary px-3 px-sm-5 m-2">{lang.projects.buttonGithub}</button>
+                : <a href={project.live} target="blank">
+                  <button type="button" className="btn btn-primary px-3 px-sm-5 m-2">{lang.projects.buttonLive}</button>
+                </a>}
+              <a href={project.github} target="blank">
+                <button type="button" className="btn btn-primary px-3 px-sm-5 m-2">{lang.projects.buttonGithub}</button>
+              </a>
             </figcaption>
           </figure>
           <div className="col-lg-6">
