@@ -12,7 +12,7 @@
     },
     "about": {
         "title": "O mnie",
-        "description": "Cześć, jestem Michał i mieszkam w Bydgoszczy. Programowaniem zainteresowałem się w 2019 roku i rozwijam tę pasję do dzisiaj. Poświęcam na naukę każdą wolną chwilę, a ponieważ sprawia mi to przyjemność, to chciałbym żeby stało się to również moją pracą. Zdecydowałem się na naukę Front-endu, ponieważ zwracam dużą uwagę na wygląd stron internetowych i lubię widzieć efekty swoich działań. Do tworzenia projektów najczęściej używam React, ale za każdym razem staram się wykorzystać coś nowego, żeby jak najwięcej się nauczyć. Chciałbym podjąć pracę jako Junior Front-end/React Developer.",
+        "description": "Cześć, jestem Michał i mieszkam w Bydgoszczy. Programowaniem zainteresowałem się w 2019 roku i rozwijam tę pasję do dzisiaj. Poświęcam na naukę każdą wolną chwilę, a ponieważ sprawia mi to przyjemność, to chciałbym żeby stało się to również moją pracą. Zdecydowałem się na naukę Front-endu, ponieważ zwracam dużą uwagę na wygląd stron internetowych i lubię widzieć efekty swoich działań. Do tworzenia projektów najczęściej używam React, ale za każdym razem staram się wykorzystać coś nowego, żeby jak najwięcej się nauczyć. Chciałbym podjąć pracę jako Junior Front-end Developer.",
         "alt": "Ja w alpach"
     },
     "technologies": {
@@ -34,12 +34,12 @@
         },
         "top5": {
             "title": "Top 5 leagues",
-            "description": "Jako że lubię sport, w moim portfolio nie mogło zabraknąć piłkarskiej aplikacji. Na tej stronie znajdziesz aktualne tabele ligowe, najlepszych strzelców oraz skróty ostatnich meczów z 5 najlepszych lig europejskich. Dane pobrałem z 2 niezależnych API.",
+            "description": "Jako że lubię sport, w moim portfolio nie mogło zabraknąć piłkarskiej aplikacji. Na tej stronie znajdziesz aktualne tabele ligowe, najlepszych strzelców oraz skróty ostatnich meczów z 5 najlepszych lig europejskich. Dane pobrałem z 2 różnych API.",
             "stack": "React, React Router, REST API, SCSS"
         },
         "wtyker": {
             "title": "Wtyker",
-            "description": "Projekt nieistniejącego sklepu internetowego z elektroniką. Posiada możliwość filtrowania oraz sortowania produktów, a także dodawania ich do koszyka.",
+            "description": "Projekt nieistniejącego sklepu internetowego z elektroniką. Można w nim filtrować oraz sortować produkty, dodawać je do koszyka, a także złożyć zamówienie.",
             "stack": "React, React Router, Redux, Styled Components"
         },
         "portfolio": {
