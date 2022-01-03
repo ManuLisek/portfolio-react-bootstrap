@@ -25,7 +25,7 @@
         "saper": {
             "title": "Saper",
             "description": "Moja wersja popularnej gry z początku lat 80, którą zna chyba każdy. Do wyboru są 2 poziomy trudności, które różnią się wielkością planszy i ilością bomb. Dodatkowym czynnikiem jest upływający czas.",
-            "stack": "JavaScript ES6, CSS"
+            "stack": "HTML, SCSS, JavaScript"
         },
         "quiz": {
             "title": "Quiz",
