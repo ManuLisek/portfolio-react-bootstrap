@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { LangContext } from '../Context/LangContext';
+import { LangContext } from '../context/LangContext';
 import saper from '../images/saper.webp';
 import quiz from '../images/quiz.webp';
 import top5 from '../images/top5.webp';

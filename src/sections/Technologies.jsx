@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { LangContext } from '../Context/LangContext';
+import { LangContext } from '../context/LangContext';
 import { technologies } from '../data/technologies';
 import ScrollAnimation from 'react-animate-on-scroll';
 import uuid from 'react-uuid';

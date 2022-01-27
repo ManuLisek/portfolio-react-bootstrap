@@ -1,5 +1,5 @@
 import React, { useState, useLayoutEffect, useContext } from 'react';
-import { LangContext } from '../Context/LangContext';
+import { LangContext } from '../context/LangContext';
 import { useMousePosition } from '../hooks/useMousePosition';
 import { useWindowScrollPosition } from '../hooks/useWindowScrollPosition';
 import Arrow from './Arrow';

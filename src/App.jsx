@@ -1,13 +1,13 @@
 import React, {useState, useEffect} from 'react';
-import Header from './Sections/Header';
-import About from './Sections/About';
-import Technologies from './Sections/Technologies';
-import Projects from './Sections/Projects';
-import Contact from './Sections/Contact';
-import Wave from './Components/Wave';
-import Shape from './Components/Shape';
-import LoadingScreen from './Components/LoadingScreen';
-import { LangProvider } from './Context/LangContext';
+import Header from './sections/Header';
+import About from './sections/About';
+import Technologies from './sections/Technologies';
+import Projects from './sections/Projects';
+import Contact from './sections/Contact';
+import Wave from './components/Wave';
+import Shape from './components/Shape';
+import LoadingScreen from './components/LoadingScreen';
+import { LangProvider } from './context/LangContext';
 import './styles/custom.scss';
 
 function App() {

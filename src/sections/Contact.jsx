@@ -1,10 +1,10 @@
 import React, { useState, useContext } from 'react';
-import { LangContext } from '../Context/LangContext';
+import { LangContext } from '../context/LangContext';
 import emailjs from 'emailjs-com';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 import { useTranslation } from 'react-i18next';
-import WithTranslateFormErrors from '../Components/WithTranslateFormErrors';
+import WithTranslateFormErrors from '../components/WithTranslateFormErrors';
 import '../utilities/i18next';
 import {
   Github,
@@ -15,7 +15,7 @@ function Contact() {
 
   const { t } = useTranslation();
   const [lang] = useContext(LangContext);
-  const [isFormSended, setIsFormSended] = useState(false);
+  const [isFormSent, setIsFormSent] = useState(false);
   const [isError, setIsError] = useState(false);
   const initialValues = { email: '', name: '', message: '' };
   const contactSchema = Yup.object().shape({
@@ -29,7 +29,7 @@ function Contact() {
   });
 
   const sendEmail = (values, resetForm) => {
-    setIsFormSended(true);
+    setIsFormSent(true);
     emailjs
       .send('service_jzma6o4', 'template_t70kuwt', values, 'user_Ye5hZOPBDx3UqyTeAcEsp')
       .then(() => {
@@ -72,7 +72,7 @@ function Contact() {
                       <WithTranslateFormErrors errors={errors} touched={touched} setFieldTouched={setFieldTouched}>
                         <form method="POST" id="contactForm" name="contactForm" className="contactForm" noValidate="novalidate" onSubmit={handleSubmit} >
                           <h3 className="mb-4">{lang.contact.writeMe.title}</h3>
-                          {isFormSended
+                          {isFormSent
                             ? (isSubmitting
                               ? <div className="mb-4">{lang.contact.writeMe.subtitleSending}</div>
                               : (isError

@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import poland from '../images/poland.webp';
 import unitedKingdom from '../images/united-kingdom.webp';
-import { LangContext } from '../Context/LangContext';
+import { LangContext } from '../context/LangContext';
 import en from '../data/lang/en.json';
 import pl from '../data/lang/pl.json';
 
