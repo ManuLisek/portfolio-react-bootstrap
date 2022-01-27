@@ -13,6 +13,7 @@ function Contact() {
   const [lang] = useContext(LangContext);
   const [isFormSent, setIsFormSent] = useState(false);
   const [isError, setIsError] = useState(false);
+  const [isFormSubmitting, setIsFormSubmitting] = useState(false);
   const initialValues = { email: '', name: '', message: '' };
   const contactSchema = Yup.object().shape({
     email: Yup.string().email('emailIncorrect').required('emailError'),
@@ -47,6 +48,24 @@ function Contact() {
           <div className="row no-gutters">
             <div className="col-md-6 d-flex align-items-stretch">
               <div className="contact-wrap w-100 p-md-5 p-4 py-5">
+                <h3 className="mb-4">{lang.contact.writeMe.title}</h3>
+                {isFormSent ? (
+                  isFormSubmitting ? (
+                    <div className="mb-4">
+                      {lang.contact.writeMe.subtitleSending}
+                    </div>
+                  ) : isError ? (
+                    <div className="mb-4 text-danger">
+                      {lang.contact.writeMe.subtitleError}
+                    </div>
+                  ) : (
+                    <div className="mb-4">
+                      {lang.contact.writeMe.subtitleSuccess}
+                    </div>
+                  )
+                ) : (
+                  <div className="mb-4">{lang.contact.writeMe.subtitle}</div>
+                )}
                 <Formik
                   initialValues={initialValues}
                   validationSchema={contactSchema}
@@ -68,6 +87,7 @@ function Contact() {
                     isSubmitting,
                     setFieldTouched,
                   }) => {
+                    setIsFormSubmitting(isSubmitting);
                     return (
                       <WithTranslateFormErrors
                         errors={errors}
@@ -82,26 +102,6 @@ function Contact() {
                           noValidate="novalidate"
                           onSubmit={handleSubmit}
                         >
-                          <h3 className="mb-4">{lang.contact.writeMe.title}</h3>
-                          {isFormSent ? (
-                            isSubmitting ? (
-                              <div className="mb-4">
-                                {lang.contact.writeMe.subtitleSending}
-                              </div>
-                            ) : isError ? (
-                              <div className="mb-4 text-danger">
-                                {lang.contact.writeMe.subtitleError}
-                              </div>
-                            ) : (
-                              <div className="mb-4">
-                                {lang.contact.writeMe.subtitleSuccess}
-                              </div>
-                            )
-                          ) : (
-                            <div className="mb-4">
-                              {lang.contact.writeMe.subtitle}
-                            </div>
-                          )}
                           <div className="row">
                             <div className="col-md-12 mb-1">
                               <div className="form-group">
