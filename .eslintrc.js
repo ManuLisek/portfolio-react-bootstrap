@@ -8,11 +8,16 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:prettier/recommended',
   ],
+  parser: '@babel/eslint-parser',
   parserOptions: {
+    babelOptions: {
+      presets: ['@babel/preset-react'],
+    },
     ecmaFeatures: {
       jsx: true,
     },
     ecmaVersion: 'latest',
+    requireConfigFile: false,
     sourceType: 'module',
   },
   plugins: ['react', 'prettier'],
