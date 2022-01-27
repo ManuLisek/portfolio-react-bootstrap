@@ -1,17 +1,22 @@
 import React from 'react';
-import { useTranslateFormErrors } from '../hooks/useTranslationFormErrors';
 import PropTypes from 'prop-types';
+import useTranslationFormErrors from '../hooks/useTranslationFormErrors';
 
-function WithTranslateFormErrors ({ errors, touched, setFieldTouched, children }) {
-  useTranslateFormErrors(errors, touched, setFieldTouched);
+function WithTranslateFormErrors({
+  errors,
+  touched,
+  setFieldTouched,
+  children,
+}) {
+  useTranslationFormErrors(errors, touched, setFieldTouched);
   return <>{children}</>;
 }
-  
+
 WithTranslateFormErrors.propTypes = {
   touched: PropTypes.object,
   errors: PropTypes.object,
   setFieldTouched: PropTypes.func,
   children: PropTypes.object,
 };
-  
+
 export default WithTranslateFormErrors;

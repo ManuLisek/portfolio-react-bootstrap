@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
-export const useTranslateFormErrors = (errors, touched, setFieldTouched) => {
+const useTranslationFormErrors = (errors, touched, setFieldTouched) => {
   const { i18n } = useTranslation();
   useEffect(() => {
     i18n.on('languageChanged', () => {
-      Object.keys(errors).forEach(fieldName => {
+      Object.keys(errors).forEach((fieldName) => {
         if (Object.keys(touched).includes(fieldName)) {
           setFieldTouched(fieldName);
         }
@@ -17,4 +17,4 @@ export const useTranslateFormErrors = (errors, touched, setFieldTouched) => {
   }, [errors]);
 };
 
-
+export default useTranslationFormErrors;

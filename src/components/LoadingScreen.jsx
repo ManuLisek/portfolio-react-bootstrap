@@ -1,9 +1,8 @@
 import React from 'react';
-import Shape from './Shape';
 import Loader from 'react-js-loader';
+import Shape from './Shape';
 
 function LoadingScreen() {
-
   return (
     <>
       <div className="bg-primary vh-100 d-flex justify-content-center">

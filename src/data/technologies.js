@@ -13,7 +13,7 @@ import {
 } from '@styled-icons/simple-icons';
 import { PhoneDesktop } from '@styled-icons/fluentui-system-regular/PhoneDesktop';
 
-export const technologies = [
+const technologies = [
   {
     technology: 'HTML5',
     image: Html5,
@@ -75,3 +75,5 @@ export const technologies = [
     color: 'text-github',
   },
 ];
+
+export default technologies;

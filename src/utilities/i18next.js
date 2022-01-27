@@ -22,17 +22,15 @@ const resources = {
   },
 };
 
-i18n
-  .use(initReactI18next) 
-  .init({
-    resources,
-    lng: 'pl',
+i18n.use(initReactI18next).init({
+  resources,
+  lng: 'pl',
 
-    keySeparator: false, 
+  keySeparator: false,
 
-    interpolation: {
-      escapeValue: false, 
-    },
-  });
+  interpolation: {
+    escapeValue: false,
+  },
+});
 
 export default i18n;

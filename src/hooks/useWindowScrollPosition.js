@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
+
 const isWindowAvailable = typeof window !== 'undefined';
 
-const getPosition = () => isWindowAvailable ? window.pageYOffset : undefined;
+const getPosition = () => (isWindowAvailable ? window.pageYOffset : undefined);
 
-export const useWindowScrollPosition = () => {
-
+const useWindowScrollPosition = () => {
   const [scrollPosition, setScrollPosition] = useState(getPosition());
 
   useEffect(() => {
@@ -23,3 +23,5 @@ export const useWindowScrollPosition = () => {
 
   return scrollPosition;
 };
+
+export default useWindowScrollPosition;
