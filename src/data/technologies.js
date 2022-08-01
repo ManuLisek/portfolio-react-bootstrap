@@ -1,7 +1,7 @@
 import {
   Css3,
   Javascript,
-  Sass,
+  Typescript,
   Html5,
   Bootstrap,
   Git,
@@ -30,9 +30,9 @@ const technologies = [
     color: 'text-js',
   },
   {
-    technology: 'Sass',
-    image: Sass,
-    color: 'text-sass',
+    technology: 'TypeScript',
+    image: Typescript,
+    color: 'text-typescript',
   },
   {
     technology: 'Bootstrap',
