@@ -12,7 +12,7 @@
     },
     "about": {
         "title": "O mnie",
-        "description": "Cześć, jestem Michał i mieszkam w Bydgoszczy. Programowaniem zainteresowałem się w 2019 roku i rozwijam tę pasję do dzisiaj. Poświęcam na naukę każdą wolną chwilę, a ponieważ sprawia mi to przyjemność, to chciałbym żeby stało się to również moją pracą. Zdecydowałem się na naukę Front-endu, ponieważ zwracam dużą uwagę na wygląd stron internetowych i lubię widzieć efekty swoich działań. Do tworzenia projektów najczęściej używam React, ale za każdym razem staram się wykorzystać coś nowego, żeby jak najwięcej się nauczyć. Chciałbym podjąć pracę jako Junior Front-end Developer.",
+        "description": "Cześć, jestem Michał i mieszkam w Bydgoszczy. Programowaniem zainteresowałem się w 2019 roku i rozwijam tę pasję do dzisiaj. Zdecydowałem się na naukę Front-endu, ponieważ zwracam dużą uwagę na wygląd stron internetowych i lubię widzieć efekty swoich działań. W nowej pracy najbardziej zależy mi na możliwości rozwoju w tym obszarze ale jestem też otwarty na naukę technologii Back-endowych.",
         "alt": "Ja w alpach"
     },
     "technologies": {
