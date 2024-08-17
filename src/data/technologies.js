@@ -3,13 +3,13 @@ import {
   Javascript,
   Typescript,
   Html5,
-  Bootstrap,
   Git,
   ReactLogo,
-  Redux,
+  Nextdotjs,
   Styledcomponents,
-  Reactrouter,
-  Github,
+  Redux,
+  Jquery,
+  Figma,
 } from '@styled-icons/simple-icons';
 import { PhoneDesktop } from '@styled-icons/fluentui-system-regular/PhoneDesktop';
 
@@ -35,9 +35,9 @@ const technologies = [
     color: 'text-typescript',
   },
   {
-    technology: 'Bootstrap',
-    image: Bootstrap,
-    color: 'text-bs',
+    technology: 'jQuery',
+    image: Jquery,
+    color: 'text-jq',
   },
   {
     technology: 'React',
@@ -45,14 +45,14 @@ const technologies = [
     color: 'text-react',
   },
   {
+    technology: 'Next.js',
+    image: Nextdotjs,
+    color: 'text-nextjs',
+  },
+  {
     technology: 'Redux',
     image: Redux,
     color: 'text-redux',
-  },
-  {
-    technology: 'React Router',
-    image: Reactrouter,
-    color: 'text-reset',
   },
   {
     technology: 'Styled Components',
@@ -70,9 +70,9 @@ const technologies = [
     color: 'text-git',
   },
   {
-    technology: 'Github',
-    image: Github,
-    color: 'text-github',
+    technology: 'Figma',
+    image: Figma,
+    color: 'text-figma',
   },
 ];
 

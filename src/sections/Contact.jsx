@@ -24,12 +24,7 @@ function Contact() {
   const sendEmail = (values, resetForm) => {
     setIsFormSent(true);
     emailjs
-      .send(
-        'service_jzma6o4',
-        'template_t70kuwt',
-        values,
-        'user_Ye5hZOPBDx3UqyTeAcEsp'
-      )
+      .send('service_jzma6o4', 'template_t70kuwt', values, 'MxC2YGG83yOxjlTjv')
       .then(
         () => {
           setIsError(false);

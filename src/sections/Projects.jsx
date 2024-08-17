@@ -1,9 +1,8 @@
 import React, { useContext } from 'react';
 import uuid from 'react-uuid';
 import saper from '../images/saper.webp';
-import quiz from '../images/quiz.webp';
-import top5 from '../images/top5.webp';
 import wtyker from '../images/wtyker.webp';
+import kancelaria from '../images/kancelaria.webp';
 import portfolio from '../images/portfolio.webp';
 import { LangContext } from '../context/LangContext';
 
@@ -19,22 +18,6 @@ function Projects() {
       github: 'https://github.com/ManuLisek/saper-javascript',
     },
     {
-      title: lang.projects.quiz.title,
-      image: quiz,
-      description: lang.projects.quiz.description,
-      stack: lang.projects.quiz.stack,
-      live: 'https://manulisek.github.io/quiz-react/',
-      github: 'https://github.com/ManuLisek/quiz-react',
-    },
-    {
-      title: lang.projects.top5.title,
-      image: top5,
-      description: lang.projects.top5.description,
-      stack: lang.projects.top5.stack,
-      live: 'https://manulisek.github.io/top-5-leagues-react/',
-      github: 'https://github.com/ManuLisek/top-5-leagues-react',
-    },
-    {
       title: lang.projects.wtyker.title,
       image: wtyker,
       description: lang.projects.wtyker.description,
@@ -48,6 +31,14 @@ function Projects() {
       description: lang.projects.portfolio.description,
       stack: lang.projects.portfolio.stack,
       github: 'https://github.com/ManuLisek/portfolio-react-bootstrap',
+    },
+    {
+      title: lang.projects.kancelaria.title,
+      image: kancelaria,
+      description: lang.projects.kancelaria.description,
+      stack: lang.projects.kancelaria.stack,
+      live: 'https://kancelaria-frontend.vercel.app',
+      github: 'https://github.com/ManuLisek/kancelaria-frontend',
     },
   ];
   const projectsList = projects.map((project, i) => {

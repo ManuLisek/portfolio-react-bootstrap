@@ -46,6 +46,11 @@
             "title": "To portolio",
             "description": "Strona na której właśnie się znajdujesz. Prezentuję na niej swoje umiejętności oraz ukończone projekty.",
             "stack": "React, Context API, Bootstrap, EmailJS, Formik, Yup, SCSS"
+        },
+        "kancelaria": {
+            "title": "Kancelaria",
+            "description": "Projekt nad którym aktualnie pracuję. Będzie to strona wizytówka kancelarii adwokackiej.",
+            "stack": "Next.js, React, Styled Components"
         }
     },
     "contact": {

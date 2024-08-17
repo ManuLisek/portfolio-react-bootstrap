@@ -11,12 +11,14 @@ $html: #e34c26;
 $css: #2965f1;
 $js: #f0db4f;
 $typescript: #007acc;
-$bs: #563d7c;
+$figma: #563d7c;
 $react: #61dbfb;
 $redux: #764abc;
 $sc: #c69;
 $git: #f34f29;
 $github: #4078c0;
+$nextjs: #000000;
+$jq: #7acef4;
 
 $theme-colors: (
 	"primary": $primary,
@@ -31,10 +33,12 @@ $theme-colors: (
 	"css": $css,
 	"js": $js,
 	"typescript": $typescript,
-	"bs": $bs,
+	"figma": $figma,
 	"react": $react,
 	"redux": $redux,
 	"sc": $sc,
 	"git": $git,
 	"github": $github,
+  "nextjs": $nextjs,
+  "jq": $jq,
 );

@@ -46,7 +46,12 @@
             "title": "This portfolio site",
             "description": "The website you are currently on. I present here my skills and finished projects.",
             "stack": "React, Context API, Bootstrap, EmailJS, Formik, Yup, SCSS"
-        }
+        },
+        "kancelaria": {
+          "title": "Law firm",
+          "description": "The project I'm currently working on will be a website for a law firm.",
+          "stack": "Next.js, React, Styled Components"
+      }
     },
     "contact": {
         "writeMe": {
