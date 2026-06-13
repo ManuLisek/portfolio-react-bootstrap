@@ -7,12 +7,12 @@
     },
     "fox": {
         "header": "Michał Lisowiec",
-        "subheader": "Junior Front-end Developer",
+        "subheader": "Front-end Developer",
         "alt": "Fox"
     },
     "about": {
         "title": "About me",
-        "description": "Hello, I am Michał and I live in Bydgoszcz. In 2019, I got interested in programming and I develop this passion to this day. I decided on a Front-end, because I pay attention to the appearance of websites and I like to see effects of my actions. Recently, I have also become interested in optimizing websites for performance and search engine visibility. In my new job, I would like to further develop my skills in these areas.",
+        "description": "Hi, I’m Michał, a frontend developer with experience in working on online stores and e-commerce projects. I focus on implementing new features, developing key areas of the website, and cooperating with marketing, SEO, and UX/UI teams. I am especially interested in projects that combine technology with business and have a real impact on conversion, performance, and user experience.",
         "alt": "Me in the Alps"
     },
     "technologies": {
@@ -48,10 +48,10 @@
             "stack": "React, Context API, Bootstrap, EmailJS, Formik, Yup, SCSS"
         },
         "kancelaria": {
-          "title": "Law firm",
-          "description": "The project I'm currently working on will be a website for a law firm.",
-          "stack": "Next.js, React, Styled Components"
-      }
+            "title": "Law firm",
+            "description": "A business card website for a law firm using the Sanity API as a content management system for blog posts and practice areas.",
+            "stack": "Next.js, React, Tailwind"
+        }
     },
     "contact": {
         "writeMe": {
@@ -74,5 +74,4 @@
             "subtitle": "Find out more about me or contact me in another way."
         }
     }
-    
 }

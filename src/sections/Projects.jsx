@@ -37,7 +37,7 @@ function Projects() {
       image: kancelaria,
       description: lang.projects.kancelaria.description,
       stack: lang.projects.kancelaria.stack,
-      live: 'https://kancelaria-frontend.vercel.app',
+      live: 'https://kancelaria-lime.vercel.app',
       github: 'https://github.com/ManuLisek/kancelaria-frontend',
     },
   ];
@@ -46,9 +46,10 @@ function Projects() {
       <div key={uuid()} className="container px-4 text-secondary">
         <div className="row gx-0 mb-4 mb-lg-5 align-items-center">
           <figure
-            className={`figure col-lg-6 hover-img bg-black overflow-hidden position-relative rounded-3 ${
-              i % 2 !== 0 ? 'order-lg-2' : ''
-            }`}
+            // eslint-disable-next-line prettier/prettier
+            className={`figure col-lg-6 hover-img bg-black overflow-hidden position-relative rounded-3 ${i % 2 !== 0 ? 'order-lg-2' : ''
+              // eslint-disable-next-line prettier/prettier
+              }`}
           >
             <img
               className="img-fluid"
