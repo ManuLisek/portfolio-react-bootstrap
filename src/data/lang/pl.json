@@ -7,12 +7,12 @@
     },
     "fox": {
         "header": "Michał Lisowiec",
-        "subheader": "Junior Front-end Developer",
+        "subheader": "Front-end Developer",
         "alt": "Lis"
     },
     "about": {
         "title": "O mnie",
-        "description": "Cześć, jestem Michał i mieszkam w Bydgoszczy. Programowaniem zainteresowałem się w 2019 roku i rozwijam tę pasję do dzisiaj. Zdecydowałem się na naukę Front-endu, ponieważ zwracam dużą uwagę na wygląd stron internetowych i lubię widzieć efekty swoich działań. W ostatnim czasie zainteresowałem się również optymalizacją stron internetowych pod kątem wydajności i widoczności w wyszukiwarkach. W nowej pracy chciałbym rozwinąć swoje umiejętności w tych dziedzinach.",
+        "description": "Cześć, jestem Michał, frontend developer z doświadczeniem w\u00A0pracy przy sklepach internetowych i\u00A0projektach\u00A0e\u2011commerce. Zajmuję się wdrażaniem nowych funkcjonalności, rozwijaniem kluczowych obszarów serwisu oraz współpracą z marketingiem, SEO i UX/UI. Szczególnie interesują mnie projekty, które łączą technologię z\u00A0biznesem i mają realny wpływ na konwersję, wydajność oraz jakość doświadczenia użytkownika.",
         "alt": "Ja w alpach"
     },
     "technologies": {
@@ -49,8 +49,8 @@
         },
         "kancelaria": {
             "title": "Kancelaria",
-            "description": "Projekt nad którym aktualnie pracuję. Będzie to strona wizytówka kancelarii adwokackiej.",
-            "stack": "Next.js, React, Styled Components"
+            "description": "Strona wizytówka kancelarii adwokackiej wykorzystująca Sanity API do systemu zarządzania treścią dla treści bloga i specjalizacji.",
+            "stack": "Next.js, React, Tailwind"
         }
     },
     "contact": {
@@ -74,5 +74,4 @@
             "subtitle": "Dowiedz się o mnie więcej lub skontaktuj się w inny sposób."
         }
     }
-    
 }
